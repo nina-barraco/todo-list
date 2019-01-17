@@ -1,0 +1,7 @@
+.liSelect {
+    color: blue;
+}
+
+ul li:hover {
+    color: grey;
+}
