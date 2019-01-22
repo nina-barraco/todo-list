@@ -8,23 +8,32 @@
     <link rel="stylesheet" type="text/css" media="screen" href="todo.css" />
 </head>
 <body>
+
+    <header>
+        <h1 class="quote">The secret of getting ahead is getting started</h1>
+        <h3 class="byLine">~ Mark Twain</h3>
+    </header>
+
+    <main>
     
-    <div class="todo">
-        <div class="title"><h2>my</h2><h1>To Do</h1><h2>list</h2></div>
-        <input type="text" id="itemInput" placeholder="Add New To Do"></input>
-        <button id="itemInputSubmit">Submit</button>
+        <div class="todo">
+            <h2 class="title">To Do List</h2>
+            <input type="text" id="itemInput" placeholder="Add New To Do"></input>
+            <button id="itemInputSubmit">Submit</button>
 
-        <ul class="todos">
-            <li>Take out the trash</li>
-            <li>Feed Nala</li>
-            <li>Stop at CVS</li>
-        </ul>
+            <ul class="todos">
+                <li>Take out the trash</li>
+                <li>Feed Nala</li>
+                <li>Stop at CVS</li>
+            </ul>
 
-        <div class="buttons">
-            <button id="deleteButton">Delete</button>
-            <button id="updateButton">Update</button>
+            <div class="buttons">
+                <button id="deleteButton">Delete</button>
+                <button id="updateButton">Update</button>
+            </div>
         </div>
-    </div>
+
+    </main>
 
 <!-- place javascript at the bottom of your file bc otherwise the js will load first and then try to load html that isn't there yet, so you will get errors thrown.  -->
 <script src="todo.js"></script>

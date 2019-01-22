@@ -1,24 +1,41 @@
 body {
+    background-image: linear-gradient( rgba(68, 36, 30, 0.2), rgba(68, 36, 30, 0.2)), url(Abstract_brush_pattern_3-02.png);
+    background-size: cover;
+}
+
+.quote {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 3rem;
+    letter-spacing: .75em;
+    text-align: center;
+    color: white;
+    padding-top: 5%;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+.byLine {
+    font-family: 'Black Forest', serif;
+    font-size: 1rem;
+    text-align: center;
+    color: white;
+}
+
+main {
     display: flex;
     flex-direction: row;
     justify-content: center;
 }
 
 .title {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
+    font-family: 'Bebas Neue', sans-serif;
+    text-align: center;
+    font-size: 2rem;
+    letter-spacing: .25em;
 }
 
-h1 {
-    font-family: 'Black Forest sans', sans-serif;
-    font-size: 6rem;
-    text-align: center;
-}
-
-h2 {
-    font-family: 'Black Forest', serif;
-    text-align: center;
+ul li {
+    font-family: 'Open Sans', sans-serif;
 }
 
 .liSelect {
