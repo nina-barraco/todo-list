@@ -17,13 +17,12 @@ input.addEventListener("click", addToDo);
 //when you click on an li, you select it. when you click again, you deselect it.
 
 
-function selectItem(evt) {
+var select = function selectItem(evt) {
     evt.target.classList.toggle("liSelect");
 };
 
-var listItem = document.querySelectorAll("li");
 [...document.querySelectorAll("li")].forEach(function(item) {
-    item.addEventListener('click', selectItem);
+    item.addEventListener('click', select);
 });
 
 //when a function associated with an event listener is fired, the browser passes in a bunch of info about the event to the function.
@@ -46,7 +45,27 @@ var listItem = document.querySelectorAll("li");
 
 //if an item is selected and you click delete, delete the item
 
+function deleteItem() {
+    var todos = document.querySelector(".todos");
+    var selected = document.querySelector(".liSelect")
+    todos.removeChild(selected);
+};
+
+var del = document.querySelector("#deleteButton");
+del.addEventListener("click", deleteItem);
+
+
+
+
 //if the item is selected and you click update, a prompt box will appear
+
+function updateItem() {
+    var ask = prompt("Please enter updated text");
+    document.querySelector(".liSelect").textContent = ask;
+};
+
+var update = document.querySelector("#updateButton");
+update.addEventListener("click", updateItem);
 
 
 
@@ -54,4 +73,4 @@ var listItem = document.querySelectorAll("li");
 //helpful JS properties you used through this project
 //createElement()
 //innerHTML()
-//appendChild()
+// appendChild()

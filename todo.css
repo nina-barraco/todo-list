@@ -1,7 +1,35 @@
+body {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.title {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+h1 {
+    font-family: 'Black Forest sans', sans-serif;
+    font-size: 6rem;
+    text-align: center;
+}
+
+h2 {
+    font-family: 'Black Forest', serif;
+    text-align: center;
+}
+
 .liSelect {
     color: blue;
 }
 
 ul li:hover {
     color: grey;
+    cursor: pointer;
+}
+
+.close {
+    display: none;
 }
